@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(90deg, #e72c83,#a742c6 );
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.search {
+  position: relative;
+  left: -50px;
+  height: 50px;
+  transition: transform 0.5s ease;
+  transition-delay: 0.2s;
+ 
+}
+
+.search .input {
+  background-color: #fff;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.5s ease;
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+
+.btn {
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.5s ease;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+}
+.btn .fas{
+  font-size: 40px;      
+  background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%); 
+  background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%); 
+  background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text; 
+  -webkit-text-fill-color:transparent;
+}
+.tab-container{
+  display: flex;
+  position: relative;
+  width: 500px;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  left: 20px;
+ 
+ 
+
+  
+}
+.tab{
+  margin: 3px;
+  position: relative;
+  height: 100px;
+  width: 100px;
+ 
+  text-align: center;
+  justify-content: end;
+
+  background-size: 100px;
+  border-radius: 50%;
+
+  
+  
+  background-repeat: no-repeat;
+}
+.yandex{
+  background-image: url('https://avatars.mds.yandex.net/get-bunker/128809/2242b0f7baf7f84a7d0d6cd6020acd311fba9df8/orig');
+  background-size: 100px;
+  position: relative;
+  text-align: center;
+  justify-content: end;
+  transition: opacity 3s ease;
+  
+
+}
+
+
+.google{
+  background-image: url('https://egegen.com/blog/wp-content/uploads/2017/03/google.jpg');
+  background-size: 200px;
+  background-position: center;
+  position: relative;
+  left: 50px;
+  transition-delay: 0.5s;
+
+}
+.haberler{
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEXjBhP////iAAD40tPwjJD3zc7jAAnmPED/+PjwoKH//Pzvh4v52NnxkJTwio7xmp3lMzj3x8nyqarscHXoQ0r+8PHrYGb96uvpTlTsaG3+8/TqW2DufIHkDhr1tbjlGyblFyP74ePnWdENAAACaklEQVR4nO3daU5bQRRE4U4bXgijsckcAtn/JvP+W6moFKrvc+ecBVzVJw8II6A1IiIiIiIiIiIiIiIiIiIiIiIi+h/quvJ7/1y/fae6cyf1O3nvdjyx7+SiC1t4Ie/tEL59CBGe3EMYUchFCN17CCMKuQihew9hRCEXIXTvIYwo5CKE7j2EEYVchNC9hzCikIsQuvcQRhRyEUL3HsKIQi5C6N5DGFHIRQjdewgjCrkIoXsPYUQhFyF07yGMKOQihO49hBGFXITQvYcwopCLELr3EEYUchFC9x7CiEIu0sL7vnj1+80JL+Wih/17r/3D1oTL00e16PrK7XprwtY/fZab3rYKYetf5KM4gbD1r98mF7b+fdgTtUi4PopXkwtbPw56LZYJ13dU/S5//sLWfwx5ohYK19fiiEexUtj6zezC9e0m/0StFY54FIuFKzH9WiwWLv0wt3AFhn3FwuX5ZxxYKlz6AGClcHl5HAAsFC59CLBOOOgRLPz+8Fl/4nb2wuV1FLDqc5q9/usfZy/sbRyw5vPSp1/jgCWfeb+O/EB4gz+ZmV/4+MFNf2HdnvDmL3/26TT9XfT2hPP/hBTh6T2EEYVchNC9hzCikIsQuvcQRhRyEUL3HsKIQi5C6N5DGFHIRQjdewgjCrkIoXsPYUQhFyF07yGMKOQihO49hBGFXITQvYcwopCLELr3EEYUchFC9x7CiEIuQujeQxhRyEUI3XsIIwq5CKF7D2FEIRchdO8hjCjkIoTuPYQRhVw0//8DPuwu/9zuaAuP8t6h4reCZv+v1URERERERERERERERERERERERBvsN93/Ot0zZjniAAAAAElFTkSuQmCC');
+  background-size: 100px;
+  background-position: center;
+  position: relative;
+  left: 100px;
+}
+.tab-link{
+  position: relative;
+  top: 100px;
+  font-size: 12px;
+  color: whitesmoke;
+  font-weight:bold;
+  opacity: 0.9;
+  text-decoration: none;
+  
+}
+
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+
+.search.active .input {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  transition: width 0.5s ease;
+  width: 200px;
+}
+
+.search.active .btn {
+  transform: translateX(200px);
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+ 
+}
+.search.active{
+  transform: translateY(-100px);
+}
+.tab-container.active{
+  opacity: 1;
+
+}
